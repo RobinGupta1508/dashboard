@@ -1,0 +1,23 @@
+@import '../../assets/shared/css/shared.css';
+.menu_text {
+    font-weight: bold;
+}
+
+.menu_list {
+    list-style: none;
+    padding: 15px;
+}
+
+.collapse_menu .menu_text {
+    display: none;
+}
+
+.menu {
+    padding-bottom: 10px;
+}
+
+.collapse_icon {
+    border-bottom: 2px solid #e3e7e7;
+    height: 68px;
+    padding: 15px;
+}

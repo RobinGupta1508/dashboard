@@ -1,0 +1,23 @@
+.collapse_menu .menu_text {
+    display: none;
+}
+
+.pd_15 {
+    padding: 15px;
+}
+
+.flt_left {
+    float: left;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    color: #8a8b8c;
+}
+
+a span {
+    color: #383839;
+}
