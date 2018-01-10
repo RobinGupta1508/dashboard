@@ -6,8 +6,36 @@
     padding: 15px;
 }
 
+.pd_9 {
+    padding: 9px;
+}
+
+.pd_btm_5 {
+    padding-bottom: 5px;
+}
+
+.pd_top_8 {
+    padding-top: 8px;
+}
+
+.max_wd_100 {
+    max-width: 100%
+}
+
+.over_hide {
+    overflow: hidden;
+}
+
 .flt_left {
     float: left;
+}
+
+.flt_right {
+    float: right;
+}
+
+.fnt_bold {
+    font-weight: bold;
 }
 
 a:hover {
@@ -20,4 +48,8 @@ a {
 
 a span {
     color: #383839;
+}
+
+li {
+    list-style: none;
 }

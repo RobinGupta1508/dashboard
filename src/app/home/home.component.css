@@ -1,0 +1,7 @@
+@import '../../assets/shared/css/shared.css';
+.table_holder {
+    padding: 15px;
+    background: #fff;
+    box-shadow: darkgreen;
+    box-shadow: 0 0 3px #222523;
+}
