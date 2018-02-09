@@ -53,3 +53,7 @@ a span {
 li {
     list-style: none;
 }
+
+.text_center {
+    text-align: center;
+}

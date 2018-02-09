@@ -1,0 +1,18 @@
+<div class="login-page">
+    <div class="form">
+        <form class="login-form" [formGroup]="loginForm">
+            <input type="text" placeholder="username" formControlName="userName" />
+            <ol *ngIf="loginForm && loginForm.controls && loginForm.controls.userName.invalid && (loginForm.controls.userName.touched || formSubmitted)">
+                <li *ngIf="loginForm.controls.userName.errors.email" class="error">User name is not valid</li>
+            </ol>
+            <input type="password" placeholder="password" formControlName="password" />
+            <ol *ngIf="loginForm && loginForm.controls && loginForm.controls.password.invalid && (loginForm.controls.password.touched || formSubmitted)">
+                <li *ngIf="loginForm.controls.password.errors.required" class="error">Password required</li>
+                <li *ngIf="loginForm.controls.password.errors.maxlength" class="error">Password max length should be 12</li>
+                <li *ngIf="loginForm.controls.password.errors.minlength" class="error">Password min length should be 6</li>
+            </ol>
+            <button (click)="login()" type="button">login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+    </div>
+</div>

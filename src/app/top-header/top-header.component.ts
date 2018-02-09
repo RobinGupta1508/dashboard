@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-header',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit() {
+  }
+
+  toggleUserPopup() {
+    document.querySelector('.user_popup').classList.toggle('show');
+  }
+
+  logout() {
+    this._router.navigate(['./login']);
+    localStorage.removeItem('userInfo');
   }
 
 }

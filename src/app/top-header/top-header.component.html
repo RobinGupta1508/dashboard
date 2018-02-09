@@ -9,7 +9,7 @@
             </div>
             <div class="flt_right">
                 <span class="user_name">Emma Watson</span>
-                <a href="">
+                <a href="javascript:void(0)" (click)="toggleUserPopup()">
                     <span>
                           Settings
                         </span>
@@ -26,19 +26,19 @@
                         <div class="user_profile">
                             <img src="./assets/images/avtar.png" alt="" class="max_wd_100">
                         </div>
-                        <div>
+                        <div class="text_center">
                             <span class="fnt_bold">Emma Watson</span>
                         </div>
                     </div>
                 </li>
-                <li>
-                    <a href="">Profile</a>
+                <li class="link">
+                    <a href="javascript:void(0)">Profile</a>
                 </li>
-                <li>
-                    <a href="">Account</a>
+                <li class="link">
+                    <a href="javascript:void(0)">Account</a>
                 </li>
-                <li>
-                    <a href="">Signout</a>
+                <li class="link">
+                    <a href="javascript:void(0)" (click)="logout()">Logout</a>
                 </li>
             </ul>
         </div>
